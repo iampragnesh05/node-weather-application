@@ -5,7 +5,7 @@ const hbs = require("hbs");
 const foreCast = require("./utlis/forecast");
 const geoCode = require("./utlis/geocode");
 const { error } = require("console");
-const port = 3000;
+const port = process.env.PORT || 3000; 
 
 // Setting middleware
 const publicDirectoryPath = path.join(__dirname, "/public");
